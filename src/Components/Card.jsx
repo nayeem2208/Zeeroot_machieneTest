@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 function Card(props) {
   return (
     <div className="card m-6 text-slate-800 rounded-lg w-64 h-96 md:w-72 md:h-96">
-      <div className="card-img object-cover overflow-hidden">
-        <img src={props.data.imgsrc} className="w-full h-full" alt="" />
+      <div className="card-img  overflow-hidden">
+        <img src={props.data.imgsrc} className="w-full h-full object-cover" alt="" />
       </div>
       <motion.div className="card-info" whileHover={{ color: "#476b4e" }}>
         <p className="text-title">{props.data.Heading} </p>
